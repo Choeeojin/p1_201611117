@@ -22,3 +22,8 @@ def computeGrade(Score):
     return grade
 
 computeGrade(90)
+
+# 중요
+
+myGrade=computeGrade(Score)
+	print myGrade
