@@ -1,0 +1,28 @@
+﻿@startuml
+
+title 가위바위보
+
+start
+
+:player input choice;
+
+if(r)
+	if(r)
+		:draw;
+	else if(s)
+		:Win;
+	else if(p)
+		:Defeat;
+else if(s)
+	if(s)
+		:Draw;
+	else if(p)
+		:Win;
+else if(p)
+	if(p)
+		:Draw;
+endif
+	:output play result;
+stop
+
+@enduml
