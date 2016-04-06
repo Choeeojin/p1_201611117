@@ -1,0 +1,28 @@
+@startuml
+
+title year
+
+
+start
+
+:input year; 
+
+
+if (year%4 and not year$100) then (yes)
+  :À±³â;
+
+
+else if (year%4 and year%400) then (yes) 
+  :À±³â;
+
+else if (not enough)
+  :error;
+ 
+
+endif
+
+:output result;
+
+stop
+
+@enduml
