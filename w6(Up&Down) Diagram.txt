@@ -1,0 +1,24 @@
+@startuml
+
+title Up&DownGame 
+
+
+start
+
+:host enter the numberA; 
+
+
+:player enter the numberB; 
+
+while(correct?)
+    if (numberA<numberB) then (yes)
+      :Down;
+    else (no)
+      :Up;
+    endif
+      :repeat;
+endwhile
+  :GoodJob;
+stop
+
+@enduml
