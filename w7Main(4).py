@@ -39,6 +39,8 @@ def saveTracks():
     t1.left(90)
     t1.fd(200)
 
+wn.exitonclick()
+
 def lab7():
 	saveTracks()
 
