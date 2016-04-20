@@ -12,6 +12,11 @@ t1=turtle.Turtle()
 
 
 
+import turtle
+wn=turtle.Screen()
+wn.bgpic("myMaze.gif")
+t1=turtle.Turtle()
+
 def saveTracks():
     tracks=list()
     t1.speed(1)
@@ -50,15 +55,21 @@ def saveTracks():
     tracks.append(t1.pos())
     
     return tracks
+mytracks=saveTracks()
 
+def replayTracks(mytracks):
+    for i in range(0,len(mytracks)):
+        print mytracks[i]
 
-wn.exitonclick()
 
 def lab7():
-	saveTracks()
+	mytracks=saveTracks()
+	replayTracks(mytracks)
 
 
 def main():
 	lab7()
-if __name__=="__main__"
+	wn.exitonclick()
+
+if __name__=="__main__":
 	main()

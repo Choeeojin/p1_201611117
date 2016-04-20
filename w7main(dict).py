@@ -22,5 +22,5 @@ def lab7():
 def main():
 	lab6()
 
-if __name__=="__main__"
+if __name__=="__main__":
 	main()
