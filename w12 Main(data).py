@@ -1,14 +1,12 @@
 ﻿data=[1,2,3,4,5,6,7,8,9,10]
 fout=open('outputNumber.txt','w')
-def writeline(data):
-    for i in data:
-        if i%2==0:
-            fout.write('\n')
-        else:
-            fout.write('\t')
-        toPrint="{0}{1}".format(i,sym)
-        fout.write(toPrint)
-    fout.write('\n')
-writeline(data)
+for i in data:
+   if i%2==0:
+     s='\n'
+    else:
+     s='\t'
+    toPrint="{0}{1}".format(i,s)
+    fout.write(toPrint)
+fout.write('\n')
 
 fout.close()
