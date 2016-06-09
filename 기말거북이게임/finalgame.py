@@ -1,4 +1,11 @@
-﻿import turtle
+﻿```
+created by eojin
+python game 1.0ver
+
+```
+
+
+import turtle
 wn=turtle.Screen()
 t1=turtle.Turtle()
 wn.bgpic("Game.gif")
